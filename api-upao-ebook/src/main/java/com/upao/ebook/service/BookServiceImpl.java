@@ -16,11 +16,11 @@ public class BookServiceImpl implements BookService{
     }
     @Override
     public Book createBook(Book book) {
-        return null;
+        return bookRepository.save(book);
     }
 
     @Override
     public List<Book> getAllBooks() {
-        return null;
+        return bookRepository.findAll();
     }
 }
